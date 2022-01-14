@@ -1,0 +1,50 @@
+{
+  "name": "@cubejs-backend/promql-driver",
+  "description": "Cube.js promql driver",
+  "author": "Cube Dev, Inc.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cube-js/cube.js.git",
+    "directory": "packages/cubejs-promql-driver"
+  },
+  "engines": {
+    "node": "^12.0.0 || ^14.0.0 || >=16.0.0"
+  },
+  "main": "driver/PromqlDriver.js",
+  "typings": "driver/index.d.ts",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "lint:fix": "eslint --fix **/*.js",
+    "integration": "jest --ci ./test/*.integration.js",
+    "integration:elastic": "yarn run integration"
+  },
+  "files": [
+    "driver"
+  ],
+  "dependencies": {
+    "@cubejs-backend/query-orchestrator": "^0.29.20",
+    "node-sql-parser": "^4.0.5",
+    "prometheus-query": "^3.2.0"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@cubejs-backend/linter": "^0.29.0",
+    "@types/jest": "^26.0.20",
+    "jest": "^26.6.3",
+    "testcontainers": "^7.5.0"
+  },
+  "eslintConfig": {
+    "extends": "../cubejs-linter"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/__tests__/**/*.js?(x)",
+      "**/?(*.)+(spec|test|integration).js?(x)"
+    ]
+  }
+}
