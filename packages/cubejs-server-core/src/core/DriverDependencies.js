@@ -20,7 +20,7 @@ module.exports = {
   druid: '@cubejs-backend/druid-driver',
   cubestore: '@cubejs-backend/cubestore-driver',
   ksql: '@cubejs-backend/ksql-driver',
-  promql: '@cubejs-promql-driver',
+  promql: '@cubejs-backend/promql-driver',
   // List for JDBC drivers
   'databricks-jdbc': '@cubejs-backend/databricks-jdbc-driver',
 };
