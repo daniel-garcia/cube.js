@@ -42,6 +42,7 @@ class PromqlDriver extends BaseDriver {
   }
 
   async query(query, values) {
+    console.log(JSON.stringify(query, null, 2))
     try {
       const result = (await this.sqlClient.sql.query({ // TODO cursor
         format: this.config.queryFormat,
