@@ -1,1 +1,5 @@
-module.exports = require('../dist/src/core/DriverDependencies');
+module.exports = {
+    ...require('../dist/src/core/DriverDependencies'),
+};
+
+

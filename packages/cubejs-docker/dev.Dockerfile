@@ -72,6 +72,7 @@ COPY packages/cubejs-client-vue3/package.json packages/cubejs-client-vue3/packag
 COPY packages/cubejs-client-ngx/package.json packages/cubejs-client-ngx/package.json
 COPY packages/cubejs-client-ws-transport/package.json packages/cubejs-client-ws-transport/package.json
 COPY packages/cubejs-playground/package.json packages/cubejs-playground/package.json
+COPY packages/cubejs-promql-driver/package.json packages/cubejs-promql-driver/package.json
 
 RUN yarn policies set-version v1.22.5
 
@@ -117,6 +118,7 @@ COPY packages/cubejs-server-core/ packages/cubejs-server-core/
 COPY packages/cubejs-snowflake-driver/ packages/cubejs-snowflake-driver/
 COPY packages/cubejs-sqlite-driver/ packages/cubejs-sqlite-driver/
 COPY packages/cubejs-ksql-driver/ packages/cubejs-ksql-driver/
+COPY packages/cubejs-promql-driver/ packages/cubejs-promql-driver/
 # Frontend
 COPY packages/cubejs-templates/ packages/cubejs-templates/
 COPY packages/cubejs-client-core/ packages/cubejs-client-core/
